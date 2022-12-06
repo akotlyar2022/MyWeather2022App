@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAAEBF4E293FC053007E9C41 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAEBF4D293FC053007E9C41 /* Constants.swift */; };
 		FADC441F293F724A003CA8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC441E293F724A003CA8FF /* AppDelegate.swift */; };
 		FADC4421293F724A003CA8FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC4420293F724A003CA8FF /* SceneDelegate.swift */; };
 		FADC4423293F724A003CA8FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC4422293F724A003CA8FF /* ViewController.swift */; };
@@ -14,9 +15,11 @@
 		FADC4428293F724F003CA8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADC4427293F724F003CA8FF /* Assets.xcassets */; };
 		FADC442B293F724F003CA8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC4429293F724F003CA8FF /* LaunchScreen.storyboard */; };
 		FADC4438293F7796003CA8FF /* ViewControllerAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC4437293F7796003CA8FF /* ViewControllerAlertController.swift */; };
+		FADC443A293F94BB003CA8FF /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC4439293F94BB003CA8FF /* NetworkWeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FAAEBF4D293FC053007E9C41 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FADC441B293F724A003CA8FF /* MyWeather2022App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeather2022App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADC441E293F724A003CA8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FADC4420293F724A003CA8FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		FADC442A293F724F003CA8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADC442C293F724F003CA8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADC4437293F7796003CA8FF /* ViewControllerAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerAlertController.swift; path = MyWeather2022App/Extensions/ViewControllerAlertController.swift; sourceTree = SOURCE_ROOT; };
+		FADC4439293F94BB003CA8FF /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		FADC4434293F72BA003CA8FF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FADC4439293F94BB003CA8FF /* NetworkWeatherManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 				FADC4420293F724A003CA8FF /* SceneDelegate.swift */,
 				FADC4427293F724F003CA8FF /* Assets.xcassets */,
 				FADC4429293F724F003CA8FF /* LaunchScreen.storyboard */,
+				FAAEBF4D293FC053007E9C41 /* Constants.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -183,8 +189,10 @@
 			files = (
 				FADC4423293F724A003CA8FF /* ViewController.swift in Sources */,
 				FADC4438293F7796003CA8FF /* ViewControllerAlertController.swift in Sources */,
+				FADC443A293F94BB003CA8FF /* NetworkWeatherManager.swift in Sources */,
 				FADC441F293F724A003CA8FF /* AppDelegate.swift in Sources */,
 				FADC4421293F724A003CA8FF /* SceneDelegate.swift in Sources */,
+				FAAEBF4E293FC053007E9C41 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

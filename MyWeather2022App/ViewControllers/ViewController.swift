@@ -19,10 +19,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cityLabel: UILabel!
     
+    let networkWeatherManager = NetworkWeatherManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        networkWeatherManager.fetchCurrentWeather(forCity: "Tbilisi")
+
+
     }
 
 
