@@ -13,6 +13,7 @@
 		FADC4426293F724A003CA8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC4424293F724A003CA8FF /* Main.storyboard */; };
 		FADC4428293F724F003CA8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADC4427293F724F003CA8FF /* Assets.xcassets */; };
 		FADC442B293F724F003CA8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FADC4429293F724F003CA8FF /* LaunchScreen.storyboard */; };
+		FADC4438293F7796003CA8FF /* ViewControllerAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC4437293F7796003CA8FF /* ViewControllerAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FADC4427293F724F003CA8FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FADC442A293F724F003CA8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FADC442C293F724F003CA8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FADC4437293F7796003CA8FF /* ViewControllerAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewControllerAlertController.swift; path = MyWeather2022App/Extensions/ViewControllerAlertController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		FADC441D293F724A003CA8FF /* MyWeather2022App */ = {
 			isa = PBXGroup;
 			children = (
-				FADC441E293F724A003CA8FF /* AppDelegate.swift */,
-				FADC4420293F724A003CA8FF /* SceneDelegate.swift */,
-				FADC4422293F724A003CA8FF /* ViewController.swift */,
-				FADC4424293F724A003CA8FF /* Main.storyboard */,
-				FADC4427293F724F003CA8FF /* Assets.xcassets */,
-				FADC4429293F724F003CA8FF /* LaunchScreen.storyboard */,
 				FADC442C293F724F003CA8FF /* Info.plist */,
+				FADC4436293F72DD003CA8FF /* SupportingFiles */,
+				FADC4435293F72CB003CA8FF /* ViewControllers */,
+				FADC4434293F72BA003CA8FF /* Models */,
+				FADC4433293F729D003CA8FF /* Views */,
+				FADC4432293F728F003CA8FF /* Extensions */,
 			);
 			path = MyWeather2022App;
+			sourceTree = "<group>";
+		};
+		FADC4432293F728F003CA8FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FADC4437293F7796003CA8FF /* ViewControllerAlertController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FADC4433293F729D003CA8FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FADC4424293F724A003CA8FF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FADC4434293F72BA003CA8FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FADC4435293F72CB003CA8FF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FADC4422293F724A003CA8FF /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FADC4436293F72DD003CA8FF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FADC441E293F724A003CA8FF /* AppDelegate.swift */,
+				FADC4420293F724A003CA8FF /* SceneDelegate.swift */,
+				FADC4427293F724F003CA8FF /* Assets.xcassets */,
+				FADC4429293F724F003CA8FF /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FADC4423293F724A003CA8FF /* ViewController.swift in Sources */,
+				FADC4438293F7796003CA8FF /* ViewControllerAlertController.swift in Sources */,
 				FADC441F293F724A003CA8FF /* AppDelegate.swift in Sources */,
 				FADC4421293F724A003CA8FF /* SceneDelegate.swift in Sources */,
 			);
