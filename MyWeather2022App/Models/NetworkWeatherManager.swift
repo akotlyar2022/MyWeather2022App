@@ -7,9 +7,15 @@
 
 import Foundation
 
-struct NetworkWeatherManager{
+protocol NetworkWeatherManagerDelegate: AnyObject {
+    func updateInterface(_: NetworkWeatherManager, with currentWeather: CurrentWeather)
+}
+
+class NetworkWeatherManager{
     
-    var onComplition: ((CurrentWeather) -> Void)?
+    //var onComplition: ((CurrentWeather) -> Void)?
+    
+    weak var delegate: NetworkWeatherManagerDelegate?
     
     func fetchCurrentWeather(forCity city: String) {
         
@@ -19,7 +25,8 @@ struct NetworkWeatherManager{
         let task = session.dataTask(with: url) { data, response, error in
             if let data = data {
                 if let currentWeather = self.parseJSON(withData: data) {
-                    self.onComplition?(currentWeather)
+                    //self.onComplition?(currentWeather)
+                    self.delegate?.updateInterface(self, with: currentWeather)
                 }
             }
         }
