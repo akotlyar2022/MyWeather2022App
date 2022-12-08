@@ -20,9 +20,11 @@ struct Main: Codable {
     enum CodingKeys: String, CodingKey {
         case temp
         case feelsLike = "feels_like"
+//        case weatherDescription = "description"
     }
 }
 
 struct Weather: Codable {
     let id: Int
+//    let weatherDescription: String
 }
