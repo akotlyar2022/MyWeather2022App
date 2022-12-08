@@ -14,22 +14,24 @@ import CoreLocation
 
 class NetworkWeatherManager{
     
+    enum RequestType {
+        case cityName(city: String)
+        case coordinate(latitude: CLLocationDegrees, longitude: CLLocationDegrees)
+    }
+    
     var onComplition: ((CurrentWeather) -> Void)?
     
-//    weak var delegate: NetworkWeatherManagerDelegate?
-    
-    func fetchCurrentWeather(forCity city: String) {
-        
-        let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&units=metric"
-        performRequest(withURLString: urlString)
-
-    }
-    
-    func fetchCurrentWeather(forLatitude latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
-        
-        let urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&units=metric"
+    func fetchCurrentWeather(forRequestType requestType: RequestType) {
+        var urlString = ""
+        switch requestType {
+        case .cityName(let city):
+            urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&units=metric"
+        case .coordinate(let latitude , let longitude):
+            urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(apiKey)&units=metric"
+        }
         performRequest(withURLString: urlString)
     }
+    
     
     fileprivate func performRequest(withURLString urlString: String) {
         guard let url = URL(string: urlString) else { return }

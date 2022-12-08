@@ -33,13 +33,11 @@ struct CurrentWeather {
             
         }
     }
-//    var descriptionString: String
     
     init?(currentWeatherData: CurrentWeatherData) {
         cityName = currentWeatherData.name
         temperature = currentWeatherData.main.temp
         feelsLikeTemperature = currentWeatherData.main.feelsLike
         conditionCode = currentWeatherData.weather.first!.id
-//        descriptionString = (currentWeatherData.weather.description)
     }
 }
